@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/scale_5dp"
+    android:background="@drawable/corner_radius"
+    android:elevation="@dimen/scale_10dp">
+
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/scale_10dp"
+        android:layout_marginTop="@dimen/scale_10dp"
+        android:layout_marginBottom="@dimen/scale_2dp"
+        android:layout_toStartOf="@+id/delete_noti"
+        android:textColor="@color/colourTextDark"
+        android:textSize="@dimen/scale_18sp"
+        android:text="@string/positive"/>
+
+    <TextView
+        android:id="@+id/contact_ph_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/scale_10dp"
+        android:layout_marginBottom="@dimen/scale_2dp"
+        android:layout_toStartOf="@+id/delete_noti"
+        android:layout_below="@id/notification_title"
+        android:textColor="@color/darkerGrey"
+        android:text="@string/positive"
+        android:textSize="@dimen/scale_16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/scale_1dp"
+        android:layout_below="@id/contact_ph_no"
+        android:layout_marginTop="@dimen/scale_2dp"
+        android:background="@color/light_grey_shade"
+        />
+
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_ph_no"
+        android:layout_marginStart="@dimen/scale_10dp"
+        android:layout_marginTop="@dimen/scale_5dp"
+        android:layout_toStartOf="@+id/delete_noti"
+        android:padding="@dimen/scale_5dp"
+        android:textColor="@color/darkerGrey"
+        android:textSize="@dimen/scale_16sp" />
+
+    <ImageView
+        android:id="@+id/delete_noti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_menu_delete"
+        android:tint="@color/owlYellow" />
+
+    <TextView
+        android:id="@+id/time_stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification_text"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/scale_5dp"
+        android:textSize="@dimen/scale_12sp" />
+</RelativeLayout>

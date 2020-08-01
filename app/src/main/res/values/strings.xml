@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WhatsTrack</string>
+    <string name="service_name">WhatsappNotificationListenerService</string>
+    <string name="notification_intent">NotificationIntent</string>
+    <string name="notification_code">notificationCode</string>
+    <string name="notification_title">notificationTitle</string>
+    <string name="notification_text">notificationText</string>
+    <string name="clear">Clear all notifications</string>
+    <string name="permission_required">Permission required</string>
+    <string name="add_permissions_required">You need to add the required permissions for proper functioning of the app</string>
+    <string name="cancel">Cancel</string>
+    <string name="positive">Ok</string>
+    <string name="allow_notif_permission_text">Please turn on the notifications in the settings to
+        allow this app to capture your incoming Whatsapp messages</string>
+    <string name="allow_overlay_text">This app requires permission to draw Overlay over other apps, do you wish to continue?</string>
+    <string name="you_have_new_notifications">You have new notifications</string>
+    <string name="intro_text">Helps you keep track of your whatsapp notifications</string>
+    <string name="notification_removed">Notification removed</string>
+    <string name="all_notification_removed">All notifications removed</string>
+    <string name="notifications">Notifications</string>
+    <string name="unsaved">Unsaved</string>
+    <string name="message">Message:\n\t%s</string>
+</resources>

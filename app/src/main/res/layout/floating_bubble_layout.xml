@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/bubble_view"
+        android:layout_width="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/scale_20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--Icon of floating widget -->
+        <ImageView
+            android:id="@+id/bubble_iv"
+            android:layout_width="@dimen/scale_60dp"
+            android:layout_height="@dimen/scale_60dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <!--Close button-->
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="@dimen/scale_20dp"
+            android:layout_height="@dimen/scale_20dp"
+            android:layout_marginLeft="40dp"
+            android:tint="@android:color/holo_red_dark"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+
+        <TextView
+            android:id="@+id/new_notif_alert_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/scale_18sp"
+            android:textColor="@color/colourTextDark"
+            android:layout_toEndOf="@id/bubble_iv"
+            android:layout_centerVertical="true"
+            android:text="@string/you_have_new_notifications"/>
+    </RelativeLayout>
+
+</FrameLayout>

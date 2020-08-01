@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bodyBackground"
+    tools:context=".Activity.MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notifications_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/scale_5dp"
+        android:layout_below="@+id/clear_tv"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notifications"
+        android:textSize="@dimen/scale_16sp"
+        android:layout_margin="@dimen/scale_5dp"
+        android:paddingStart="@dimen/scale_10dp"
+        android:paddingEnd="@dimen/scale_10dp"
+        android:paddingTop="@dimen/scale_2dp"
+        android:textColor="#58668b"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/clear_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:textSize="@dimen/scale_16sp"
+        android:layout_margin="@dimen/scale_5dp"
+        android:paddingStart="@dimen/scale_10dp"
+        android:paddingEnd="@dimen/scale_10dp"
+        android:paddingTop="@dimen/scale_2dp"
+        android:textColor="#cccccc"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
